@@ -23,7 +23,7 @@ from parsers.verilog_parser import (
 )
 from engines.simulator import run_simulation
 from engines.truth_table import parse_truth_table, write_truth_table_csv, TruthTable
-from engines.logic_minimizer import functions_from_truth_table
+from engines.logic_minimizer import functions_from_truth_table, timing_sense
 from engines.cell_library import (
     build_cell_library, load_cell_library,
     lookup_cell_area, save_cell_library,
@@ -50,13 +50,33 @@ def _parse_top(netlist: Path, top: str | None) -> tuple[ModuleInfo, list[Port], 
     return module, inputs, outputs, cell_names
 
 
-def _write_outputs(work_dir: Path, module: ModuleInfo, table: TruthTable,
-                   functions: dict[str, str], cell_area: float) -> Path:
+def _write_outputs(work_dir: Path, cell_name: str, inputs: list[str],
+                   outputs: list[str], functions: dict[str, str],
+                   table: TruthTable | None, cell_area: float) -> Path:
     """写入 .truth.csv 和 .template.lib，返回 lib 路径."""
     work_dir.mkdir(parents=True, exist_ok=True)
-    write_truth_table_csv(table, work_dir / f"{module.name}.truth.csv")
-    out = work_dir / f"{module.name}.template.lib"
-    out.write_text(generate_lib_template(module, table, functions, cell_area))
+    if table is not None:
+        write_truth_table_csv(table, work_dir / f"{cell_name}.truth.csv")
+
+    # 构建 timing_arcs: output → {input → sense}
+    timing_arcs: dict[str, dict[str, str]] = {}
+    if table is not None:
+        for out_name in outputs:
+            timing_arcs[out_name] = {}
+            for in_name in inputs:
+                sense = timing_sense(table, out_name, in_name)
+                if sense is not None:
+                    timing_arcs[out_name][in_name] = sense
+
+    out = work_dir / f"{cell_name}.template.lib"
+    out.write_text(generate_lib_template(
+        cell_name=cell_name,
+        inputs=inputs,
+        outputs=outputs,
+        functions=functions,
+        timing_arcs=timing_arcs,
+        cell_area=cell_area,
+    ))
     return out
 
 
@@ -101,7 +121,11 @@ def cmd_sim(args: argparse.Namespace) -> None:
         cell_area = sum(lookup_cell_area(lib, c) for c in cell_names)
 
     (args.work_dir / f"{module.name}.sim.log").write_text(sim_out)
-    out = _write_outputs(args.work_dir, module, table, functions, cell_area)
+
+    in_names = [p.name for p in inputs]
+    out_names = [p.name for p in outputs]
+    out = _write_outputs(args.work_dir, module.name, in_names, out_names,
+                         functions, table, cell_area)
 
     print(f"Top        : {module.name}")
     print(f"输入位宽   : {vector_width(inputs)}")
@@ -143,7 +167,10 @@ def cmd_derive(args: argparse.Namespace) -> None:
     # 4. 面积
     cell_area = sum(lookup_cell_area(cell_lib, c) for c in cell_names)
 
-    out = _write_outputs(args.work_dir, module, table, functions, cell_area)
+    in_names = [p.name for p in inputs]
+    out_names = [p.name for p in outputs]
+    out = _write_outputs(args.work_dir, module.name, in_names, out_names,
+                         functions, table, cell_area)
 
     print(f"Top        : {module.name}")
     print(f"输入位宽   : {vector_width(inputs)}")
