@@ -22,3 +22,4 @@ demo/input/asap7sc7p5t/
 # OS
 .DS_Store
 Thumbs.db
+*.swp
