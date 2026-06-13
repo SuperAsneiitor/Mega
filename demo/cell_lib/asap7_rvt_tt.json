@@ -1,0 +1,2514 @@
+{
+  "cells": {
+    "A2O1A1Ixp33_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !B) + (!A2 * !B) + (!C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "A2O1A1O1Ixp25_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(!A1 * !B * !D) + (!A2 * !B * !D) + (!C * !D)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "AND2x2_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(A * B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AND2x4_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A * B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AND2x6_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A * B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AND3x1_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(A * B * C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AND3x2_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(A * B * C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AND3x4_ASAP7_75t_R": {
+      "area": 0.20412,
+      "functions": {
+        "Y": "(A * B * C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AND4x1_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(A * B * C * D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "AND4x2_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A * B * C * D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "AND5x1_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A * B * C * D * E)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "E": "input",
+        "Y": "output"
+      }
+    },
+    "AND5x2_ASAP7_75t_R": {
+      "area": 0.2916,
+      "functions": {
+        "Y": "(A * B * C * D * E)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "E": "input",
+        "Y": "output"
+      }
+    },
+    "AO211x2_ASAP7_75t_R": {
+      "area": 0.23328,
+      "functions": {
+        "Y": "(A1 * A2) + (B) + (C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AO21x1_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(A1 * A2) + (B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AO21x2_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(A1 * A2) + (B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AO221x1_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * A2) + (B1 * B2) + (C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AO221x2_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A1 * A2) + (B1 * B2) + (C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AO222x2_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A1 * A2) + (B1 * B2) + (C1 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AO22x1_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A1 * A2) + (B1 * B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AO22x2_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * A2) + (B1 * B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AO31x2_ASAP7_75t_R": {
+      "area": 0.23328,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AO322x2_ASAP7_75t_R": {
+      "area": 0.2187,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2) + (C1 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AO32x1_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AO32x2_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AO331x1_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3) + (C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AO331x2_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3) + (C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AO332x1_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3) + (C1 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AO332x2_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3) + (C1 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AO333x1_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3) + (C1 * C2 * C3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "C3": "input",
+        "Y": "output"
+      }
+    },
+    "AO333x2_ASAP7_75t_R": {
+      "area": 0.18954,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3) + (C1 * C2 * C3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "C3": "input",
+        "Y": "output"
+      }
+    },
+    "AO33x2_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * A2 * A3) + (B1 * B2 * B3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "Y": "output"
+      }
+    },
+    "AOI211x1_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(!A1 * !B * !C) + (!A2 * !B * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AOI211xp5_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !B * !C) + (!A2 * !B * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AOI21x1_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !B) + (!A2 * !B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AOI21xp33_ASAP7_75t_R": {
+      "area": 0.0729,
+      "functions": {
+        "Y": "(!A1 * !B) + (!A2 * !B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AOI21xp5_ASAP7_75t_R": {
+      "area": 0.0729,
+      "functions": {
+        "Y": "(!A1 * !B) + (!A2 * !B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AOI221x1_ASAP7_75t_R": {
+      "area": 0.20412,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C) + (!A1 * !B2 * !C) + (!A2 * !B1 * !C) + (!A2 * !B2 * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AOI221xp5_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C) + (!A1 * !B2 * !C) + (!A2 * !B1 * !C) + (!A2 * !B2 * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AOI222xp33_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C1) + (!A1 * !B1 * !C2) + (!A1 * !B2 * !C1) + (!A1 * !B2 * !C2) + (!A2 * !B1 * !C1) + (!A2 * !B1 * !C2) + (!A2 * !B2 * !C1) + (!A2 * !B2 * !C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI22x1_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A1 * !B1) + (!A1 * !B2) + (!A2 * !B1) + (!A2 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI22xp33_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !B1) + (!A1 * !B2) + (!A2 * !B1) + (!A2 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI22xp5_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !B1) + (!A1 * !B2) + (!A2 * !B1) + (!A2 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI311xp33_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A1 * !B * !C) + (!A2 * !B * !C) + (!A3 * !B * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AOI31xp33_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !B) + (!A2 * !B) + (!A3 * !B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AOI31xp67_ASAP7_75t_R": {
+      "area": 0.18954,
+      "functions": {
+        "Y": "(!A1 * !B) + (!A2 * !B) + (!A3 * !B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "AOI321xp33_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C) + (!A1 * !B2 * !C) + (!A2 * !B1 * !C) + (!A2 * !B2 * !C) + (!A3 * !B1 * !C) + (!A3 * !B2 * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "AOI322xp5_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C1) + (!A1 * !B1 * !C2) + (!A1 * !B2 * !C1) + (!A1 * !B2 * !C2) + (!A2 * !B1 * !C1) + (!A2 * !B1 * !C2) + (!A2 * !B2 * !C1) + (!A2 * !B2 * !C2) + (!A3 * !B1 * !C1) + (!A3 * !B1 * !C2) + (!A3 * !B2 * !C1) + (!A3 * !B2 * !C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI32xp33_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A1 * !B1) + (!A1 * !B2) + (!A2 * !B1) + (!A2 * !B2) + (!A3 * !B1) + (!A3 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI331xp33_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C1) + (!A1 * !B2 * !C1) + (!A1 * !B3 * !C1) + (!A2 * !B1 * !C1) + (!A2 * !B2 * !C1) + (!A2 * !B3 * !C1) + (!A3 * !B1 * !C1) + (!A3 * !B2 * !C1) + (!A3 * !B3 * !C1)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "Y": "output"
+      }
+    },
+    "AOI332xp33_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C1) + (!A1 * !B1 * !C2) + (!A1 * !B2 * !C1) + (!A1 * !B2 * !C2) + (!A1 * !B3 * !C1) + (!A1 * !B3 * !C2) + (!A2 * !B1 * !C1) + (!A2 * !B1 * !C2) + (!A2 * !B2 * !C1) + (!A2 * !B2 * !C2) + (!A2 * !B3 * !C1) + (!A2 * !B3 * !C2) + (!A3 * !B1 * !C1) + (!A3 * !B1 * !C2) + (!A3 * !B2 * !C1) + (!A3 * !B2 * !C2) + (!A3 * !B3 * !C1) + (!A3 * !B3 * !C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "AOI333xp33_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(!A1 * !B1 * !C1) + (!A1 * !B1 * !C2) + (!A1 * !B1 * !C3) + (!A1 * !B2 * !C1) + (!A1 * !B2 * !C2) + (!A1 * !B2 * !C3) + (!A1 * !B3 * !C1) + (!A1 * !B3 * !C2) + (!A1 * !B3 * !C3) + (!A2 * !B1 * !C1) + (!A2 * !B1 * !C2) + (!A2 * !B1 * !C3) + (!A2 * !B2 * !C1) + (!A2 * !B2 * !C2) + (!A2 * !B2 * !C3) + (!A2 * !B3 * !C1) + (!A2 * !B3 * !C2) + (!A2 * !B3 * !C3) + (!A3 * !B1 * !C1) + (!A3 * !B1 * !C2) + (!A3 * !B1 * !C3) + (!A3 * !B2 * !C1) + (!A3 * !B2 * !C2) + (!A3 * !B2 * !C3) + (!A3 * !B3 * !C1) + (!A3 * !B3 * !C2) + (!A3 * !B3 * !C3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "C3": "input",
+        "Y": "output"
+      }
+    },
+    "AOI33xp33_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !B1) + (!A1 * !B2) + (!A1 * !B3) + (!A2 * !B1) + (!A2 * !B2) + (!A2 * !B3) + (!A3 * !B1) + (!A3 * !B2) + (!A3 * !B3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx10_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx12_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx12f_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx16f_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx24_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx2_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx3_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx4_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx4f_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx5_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx6f_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "BUFx8_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx10_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx11_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx12_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx14_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx16_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx20_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx5p33_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx6p67_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx8_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "CKINVDCx9p33_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "DFFASRHQNx1_ASAP7_75t_R": {
+      "area": 0.37908,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "RESETN": "input",
+        "SETN": "input"
+      }
+    },
+    "DFFHQNx1_ASAP7_75t_R": {
+      "area": 0.2916,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output"
+      }
+    },
+    "DFFHQNx2_ASAP7_75t_R": {
+      "area": 0.30618,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output"
+      }
+    },
+    "DFFHQNx3_ASAP7_75t_R": {
+      "area": 0.32076,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output"
+      }
+    },
+    "DFFHQx4_ASAP7_75t_R": {
+      "area": 0.3645,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DFFLQNx1_ASAP7_75t_R": {
+      "area": 0.2916,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output"
+      }
+    },
+    "DFFLQNx2_ASAP7_75t_R": {
+      "area": 0.30618,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output"
+      }
+    },
+    "DFFLQNx3_ASAP7_75t_R": {
+      "area": 0.32076,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output"
+      }
+    },
+    "DFFLQx4_ASAP7_75t_R": {
+      "area": 0.3645,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DHLx1_ASAP7_75t_R": {
+      "area": 0.2187,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DHLx2_ASAP7_75t_R": {
+      "area": 0.23328,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DHLx3_ASAP7_75t_R": {
+      "area": 0.24786,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DLLx1_ASAP7_75t_R": {
+      "area": 0.2187,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DLLx2_ASAP7_75t_R": {
+      "area": 0.23328,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "DLLx3_ASAP7_75t_R": {
+      "area": 0.24786,
+      "functions": {
+        "Q": "IQ"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "Q": "output"
+      }
+    },
+    "FAx1_ASAP7_75t_R": {
+      "area": 0.20412,
+      "functions": {
+        "CON": "(!A * !B) + (!A * !CI) + (!B * !CI)",
+        "SN": "(A * B * !CI) + (A * !B * CI) + (!A * B * CI) + (!A * !B * !CI)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "CI": "input",
+        "CON": "output",
+        "SN": "output"
+      }
+    },
+    "HAxp5_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "CON": "(!A) + (!B)",
+        "SN": "(A * B) + (!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "CON": "output",
+        "SN": "output"
+      }
+    },
+    "HB1xp67_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "HB2xp67_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "HB3xp67_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "HB4xp67_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "ICGx1_ASAP7_75t_R": {
+      "area": 0.26244,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx2_ASAP7_75t_R": {
+      "area": 0.27702,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx2p67DC_ASAP7_75t_R": {
+      "area": null,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx3_ASAP7_75t_R": {
+      "area": 0.2916,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx4DC_ASAP7_75t_R": {
+      "area": null,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx4_ASAP7_75t_R": {
+      "area": 0.30618,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx5_ASAP7_75t_R": {
+      "area": 0.32076,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx5p33DC_ASAP7_75t_R": {
+      "area": null,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx6p67DC_ASAP7_75t_R": {
+      "area": null,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "ICGx8DC_ASAP7_75t_R": {
+      "area": null,
+      "functions": {},
+      "pins": {
+        "CLK": "input",
+        "ENA": "input",
+        "GCLK": "output",
+        "IQ": "internal",
+        "SE": "input"
+      }
+    },
+    "INVx11_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx13_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx1_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx2_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx3_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx4_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx5_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx6_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVx8_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVxp33_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "INVxp67_ASAP7_75t_R": {
+      "area": null,
+      "functions": {
+        "Y": "!A"
+      },
+      "pins": {
+        "A": "input",
+        "Y": "output"
+      }
+    },
+    "MAJIxp5_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A * !B) + (!A * !C) + (!B * !C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "MAJx2_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A * B) + (A * C) + (B * C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "MAJx3_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A * B) + (A * C) + (B * C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NAND2x1_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NAND2x1p5_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NAND2x2_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NAND2xp33_ASAP7_75t_R": {
+      "area": 0.05832,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NAND2xp5_ASAP7_75t_R": {
+      "area": 0.05832,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NAND2xp67_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A) + (!B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NAND3x1_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(!A) + (!B) + (!C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NAND3x2_ASAP7_75t_R": {
+      "area": 0.2916,
+      "functions": {
+        "Y": "(!A) + (!B) + (!C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NAND3xp33_ASAP7_75t_R": {
+      "area": 0.0729,
+      "functions": {
+        "Y": "(!A) + (!B) + (!C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NAND4xp25_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A) + (!B) + (!C) + (!D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "NAND4xp75_ASAP7_75t_R": {
+      "area": 0.20412,
+      "functions": {
+        "Y": "(!A) + (!B) + (!C) + (!D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "NAND5xp2_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A) + (!B) + (!C) + (!D) + (!E)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "E": "input",
+        "Y": "output"
+      }
+    },
+    "NOR2x1_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NOR2x1p5_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NOR2x2_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NOR2xp33_ASAP7_75t_R": {
+      "area": 0.05832,
+      "functions": {
+        "Y": "(!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NOR2xp67_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "NOR3x1_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(!A * !B * !C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NOR3x2_ASAP7_75t_R": {
+      "area": 0.2916,
+      "functions": {
+        "Y": "(!A * !B * !C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NOR3xp33_ASAP7_75t_R": {
+      "area": 0.0729,
+      "functions": {
+        "Y": "(!A * !B * !C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "NOR4xp25_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A * !B * !C * !D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "NOR4xp75_ASAP7_75t_R": {
+      "area": 0.20412,
+      "functions": {
+        "Y": "(!A * !B * !C * !D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "NOR5xp2_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A * !B * !C * !D * !E)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "E": "input",
+        "Y": "output"
+      }
+    },
+    "O2A1O1Ixp33_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !A2 * !C) + (!B * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "O2A1O1Ixp5_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !A2 * !C) + (!B * !C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OA211x2_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A1 * B * C) + (A2 * B * C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OA21x2_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(A1 * B) + (A2 * B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OA221x2_ASAP7_75t_R": {
+      "area": 0.23328,
+      "functions": {
+        "Y": "(A1 * B1 * C) + (A1 * B2 * C) + (A2 * B1 * C) + (A2 * B2 * C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OA222x2_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B2 * C1) + (A2 * B2 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "OA22x2_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * B1) + (A1 * B2) + (A2 * B1) + (A2 * B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "OA31x2_ASAP7_75t_R": {
+      "area": 0.2187,
+      "functions": {
+        "Y": "(A1 * B1) + (A2 * B1) + (A3 * B1)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "Y": "output"
+      }
+    },
+    "OA331x1_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B2 * C1) + (A1 * B3 * C1) + (A2 * B1 * C1) + (A2 * B2 * C1) + (A2 * B3 * C1) + (A3 * B1 * C1) + (A3 * B2 * C1) + (A3 * B3 * C1)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "Y": "output"
+      }
+    },
+    "OA331x2_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B2 * C1) + (A1 * B3 * C1) + (A2 * B1 * C1) + (A2 * B2 * C1) + (A2 * B3 * C1) + (A3 * B1 * C1) + (A3 * B2 * C1) + (A3 * B3 * C1)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "Y": "output"
+      }
+    },
+    "OA332x1_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B3 * C1) + (A3 * B3 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "OA332x2_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B3 * C1) + (A3 * B3 * C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "OA333x1_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B1 * C3) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B2 * C3) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A1 * B3 * C3) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B1 * C3) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B2 * C3) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A2 * B3 * C3) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B1 * C3) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B2 * C3) + (A3 * B3 * C1) + (A3 * B3 * C2) + (A3 * B3 * C3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "C3": "input",
+        "Y": "output"
+      }
+    },
+    "OA333x2_ASAP7_75t_R": {
+      "area": 0.18954,
+      "functions": {
+        "Y": "(A1 * B1 * C1) + (A1 * B1 * C2) + (A1 * B1 * C3) + (A1 * B2 * C1) + (A1 * B2 * C2) + (A1 * B2 * C3) + (A1 * B3 * C1) + (A1 * B3 * C2) + (A1 * B3 * C3) + (A2 * B1 * C1) + (A2 * B1 * C2) + (A2 * B1 * C3) + (A2 * B2 * C1) + (A2 * B2 * C2) + (A2 * B2 * C3) + (A2 * B3 * C1) + (A2 * B3 * C2) + (A2 * B3 * C3) + (A3 * B1 * C1) + (A3 * B1 * C2) + (A3 * B1 * C3) + (A3 * B2 * C1) + (A3 * B2 * C2) + (A3 * B2 * C3) + (A3 * B3 * C1) + (A3 * B3 * C2) + (A3 * B3 * C3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "C3": "input",
+        "Y": "output"
+      }
+    },
+    "OA33x2_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(A1 * B1) + (A1 * B2) + (A1 * B3) + (A2 * B1) + (A2 * B2) + (A2 * B3) + (A3 * B1) + (A3 * B2) + (A3 * B3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "Y": "output"
+      }
+    },
+    "OAI211xp5_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B) + (!C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OAI21x1_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OAI21xp33_ASAP7_75t_R": {
+      "area": 0.0729,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OAI21xp5_ASAP7_75t_R": {
+      "area": 0.0729,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OAI221xp5_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B1 * !B2) + (!C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OAI222xp33_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B1 * !B2) + (!C1 * !C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI22x1_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B1 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI22xp33_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B1 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI22xp5_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !A2) + (!B1 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI311xp33_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1) + (!C1)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "C1": "input",
+        "Y": "output"
+      }
+    },
+    "OAI31xp33_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OAI31xp67_ASAP7_75t_R": {
+      "area": 0.18954,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OAI321xp33_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2) + (!C)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OAI322xp33_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2) + (!C1 * !C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI32xp33_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI331xp33_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3) + (!C1)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "Y": "output"
+      }
+    },
+    "OAI332xp33_ASAP7_75t_R": {
+      "area": 0.1458,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3) + (!C1 * !C2)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "Y": "output"
+      }
+    },
+    "OAI333xp33_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3) + (!C1 * !C2 * !C3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "C1": "input",
+        "C2": "input",
+        "C3": "input",
+        "Y": "output"
+      }
+    },
+    "OAI33xp33_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(!A1 * !A2 * !A3) + (!B1 * !B2 * !B3)"
+      },
+      "pins": {
+        "A1": "input",
+        "A2": "input",
+        "A3": "input",
+        "B1": "input",
+        "B2": "input",
+        "B3": "input",
+        "Y": "output"
+      }
+    },
+    "OR2x2_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(A) + (B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OR2x4_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A) + (B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OR2x6_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A) + (B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "OR3x1_ASAP7_75t_R": {
+      "area": 0.08748,
+      "functions": {
+        "Y": "(A) + (B) + (C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OR3x2_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(A) + (B) + (C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OR3x4_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A) + (B) + (C)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "Y": "output"
+      }
+    },
+    "OR4x1_ASAP7_75t_R": {
+      "area": 0.10206,
+      "functions": {
+        "Y": "(A) + (B) + (C) + (D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "OR4x2_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A) + (B) + (C) + (D)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "Y": "output"
+      }
+    },
+    "OR5x1_ASAP7_75t_R": {
+      "area": 0.11664,
+      "functions": {
+        "Y": "(A) + (B) + (C) + (D) + (E)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "E": "input",
+        "Y": "output"
+      }
+    },
+    "OR5x2_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A) + (B) + (C) + (D) + (E)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "C": "input",
+        "D": "input",
+        "E": "input",
+        "Y": "output"
+      }
+    },
+    "SDFHx1_ASAP7_75t_R": {
+      "area": 0.3645,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFHx2_ASAP7_75t_R": {
+      "area": 0.37908,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFHx3_ASAP7_75t_R": {
+      "area": 0.39366,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFHx4_ASAP7_75t_R": {
+      "area": 0.45198,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFLx1_ASAP7_75t_R": {
+      "area": 0.3645,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFLx2_ASAP7_75t_R": {
+      "area": 0.37908,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFLx3_ASAP7_75t_R": {
+      "area": 0.39366,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "SDFLx4_ASAP7_75t_R": {
+      "area": 0.45198,
+      "functions": {
+        "QN": "IQN"
+      },
+      "pins": {
+        "CLK": "input",
+        "D": "input",
+        "QN": "output",
+        "SE": "input",
+        "SI": "input"
+      }
+    },
+    "TIEHIx1_ASAP7_75t_R": {
+      "area": 0.04374,
+      "functions": {
+        "H": "1"
+      },
+      "pins": {
+        "H": "output"
+      }
+    },
+    "TIELOx1_ASAP7_75t_R": {
+      "area": 0.04374,
+      "functions": {
+        "L": "0"
+      },
+      "pins": {
+        "L": "output"
+      }
+    },
+    "XNOR2x1_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A * B) + (!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "XNOR2x2_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A * B) + (!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "XNOR2xp5_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A * B) + (!A * !B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "XOR2x1_ASAP7_75t_R": {
+      "area": 0.17496,
+      "functions": {
+        "Y": "(A * !B) + (!A * B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "XOR2x2_ASAP7_75t_R": {
+      "area": 0.16038,
+      "functions": {
+        "Y": "(A * !B) + (!A * B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    },
+    "XOR2xp5_ASAP7_75t_R": {
+      "area": 0.13122,
+      "functions": {
+        "Y": "(A * !B) + (!A * B)"
+      },
+      "pins": {
+        "A": "input",
+        "B": "input",
+        "Y": "output"
+      }
+    }
+  }
+}
