@@ -1,126 +1,77 @@
-# MegaCell K Library Template Flow
+# MegaCell Flow
 
-This directory contains a small flow for generating a Liberty/K-library
-template for combinational MegaCells built from stdCells.
+为组合逻辑 MegaCell 自动生成 Liberty (.lib) 模板。
 
-## Project Structure
+## 两条路径
+
+### A. 仿真路径
 
 ```
-src/                              # Core code (technology-neutral) — hierarchical
-  run_megacell_flow.sh            # Entry: Bash script
-  run_megacell_flow.csh           # Entry: C-shell script
-  megacell_flow.py                # Entry: Python main orchestrator
-  parsers/                        # Layer 1 — File → Data structures
-    verilog_parser.py             #   Verilog netlist parsing
-    liberty_parser.py             #   Liberty file parsing
-  engines/                        # Layer 2 — Core computation
-    simulator.py                  #   Simulator abstraction (iverilog/vcs/custom)
-    logic_minimizer.py            #   Quine-McCluskey + timing_sense
-    truth_table.py                #   Truth table parsing & CSV output
-    cell_library.py               #   stdCell lookup table cache
-  generators/                     # Layer 3 — Data structures → Output files
-    testbench_generator.py        #   Verilog testbench generation (standalone CLI)
-    liberty_writer.py             #   Liberty template generation
-demo/                             # Example / demo data
-  cell_lib/                   # Pre-built lookup table cache (JSON)
-  config/                     # Per-process/corner .env configs
-  input/                      # MegaCell netlists, stdCell .v + .lib (ASAP7 PDK)
-  build/                      # Generated outputs per cell
+网表 → testbench → iverilog 仿真 → 真值表 → Quine-McCluskey 最小化 → .lib
 ```
-
-## Inputs
-
-- MegaCell gate-level Verilog netlist, for example `demo/input/megacell_simple.v`
-- stdCell Verilog simulation models
-- stdCell Liberty files for area and function lookup
-- A shell config file, for example `demo/config/asap7_rvt_tt.env`
-
-## Quick Start
-
-### 1. Build stdCell lookup table (one-time)
 
 ```bash
-python3 src/megacell_flow.py --build-cell-lib \
-  --stdcell-lib-dir demo/input/asap7sc7p5t/LIB/NLDM_d \
-  --lib-glob '*RVT_TT*.lib' \
-  --cell-lib-path demo/cell_lib/asap7_rvt_tt.json
+./run_sim.sh <netlist> <stdcell_verilog_dir> [top] [work_dir]
+
+# 示例
+./run_sim.sh demo/input/megacell_simple.v demo/input/asap7sc7p5t/Verilog MegaCell_simple
 ```
 
-### 2. Run the flow
+### B. 推导路径（无需仿真器）
+
+```
+前序: Liberty 文件 → stdCell 查找表 (JSON)
+推导: 网表 + 查找表 → 符号代入 → 求值 → Quine-McCluskey 最小化 → .lib
+```
 
 ```bash
-# Using cell library (fast — skips Liberty parsing):
-python3 src/megacell_flow.py demo/input/megacell_simple.v --top MegaCell_simple \
-  --cell-lib demo/cell_lib/asap7_rvt_tt.json \
-  --stdcell-verilog-dir demo/input/asap7sc7p5t/Verilog \
-  --stdcell-verilog-glob '*RVT_TT*.v' \
-  --work-dir demo/build/MegaCell_simple
+# 前序准备（仅需一次）
+./run_build_lib.sh <lib_dir> <output.json> [glob]
 
-# Or via shell wrapper:
-./src/run_megacell_flow.sh demo/config/asap7_rvt_tt.env demo/input/megacell_simple.v MegaCell_simple
+# 推导
+./run_derive.sh <netlist> <cell_lib.json> [func_override.json] [top] [work_dir]
+
+# 完整示例
+./run_build_lib.sh demo/input/asap7sc7p5t/LIB/NLDM_d demo/cell_lib/asap7_rvt_tt.json '*RVT_TT*.lib'
+./run_derive.sh demo/input/megacell_simple.v demo/cell_lib/asap7_rvt_tt.json demo/cell_lib/stdcell_funcs.json MegaCell_simple
 ```
 
-Generated files:
+## 项目结构
 
-- `demo/build/<path>/tb_<cell>.v`: exhaustive testbench
-- `demo/build/<path>/<cell>.sim.log`: raw simulation output
-- `demo/build/<path>/<cell>.truth.csv`: parsed truth table
-- `demo/build/<path>/<cell>.template.lib`: Liberty template
-
-## Simulator Selection
-
-| Value | Simulator | Notes |
-|-------|-----------|-------|
-| `iverilog` | Icarus Verilog | Default. Requires `iverilog` + `vvp`. |
-| `vcs` | Synopsys VCS | Requires `vcs`. Set `VCS_BIN` if needed. |
-| `custom` | User-defined | Uses `COMPILE_CMD_TEMPLATE` / `RUN_CMD_TEMPLATE`. |
-
-Example VCS usage:
-```bash
-SIMULATOR=vcs ./src/run_megacell_flow.sh demo/config/asap7_rvt_tt.env demo/input/megacell_simple.v MegaCell_simple
+```
+run_sim.sh                # 仿真入口
+run_derive.sh             # 推导入口
+run_build_lib.sh          # 构建查找表入口
+src/
+├── megacell_flow.py      # Python 主入口 (sim/derive/build-lib 子命令)
+├── parsers/              # 解析层
+│   ├── verilog_parser.py
+│   └── liberty_parser.py
+├── engines/              # 引擎层
+│   ├── simulator.py      #   仿真引擎 (iverilog)
+│   ├── function_deriver.py # 组合推导引擎
+│   ├── logic_minimizer.py  # Quine-McCluskey
+│   ├── truth_table.py      # 真值表
+│   └── cell_library.py     # 查找表缓存
+└── generators/           # 生成层
+    ├── testbench_generator.py
+    └── liberty_writer.py
+demo/
+├── cell_lib/             # 预构建查找表
+├── config/               # 工艺配置
+└── input/                # 示例网表
 ```
 
-## Config File Variables
+## 生成产物
 
-Each process/corner/simulator should have its own config file under `demo/config/`.
+- `tb_<cell>.v` — 穷举测试平台
+- `<cell>.truth.csv` — 真值表
+- `<cell>.template.lib` — Liberty 模板
+- `<cell>.sim.log` — 仿真日志（仅仿真路径）
 
-| Variable | Description |
-|----------|-------------|
-| `TECH_NAME` | Process name used in the default output path |
-| `CORNER_NAME` | Corner name used in the default output path |
-| `STDCELL_VERILOG_DIR` | Directory containing stdCell simulation models |
-| `STDCELL_VERILOG_GLOB` | Glob used to scan stdCell simulation models |
-| `STDCELL_VERILOG_FILES` | Optional explicit whitespace-separated Verilog files |
-| `STDCELL_LIB_DIR` | Directory containing stdCell Liberty files |
-| `STDCELL_LIB_GLOB` | Glob used to scan Liberty files |
-| `STDCELL_LIB_FILES` | Optional explicit whitespace-separated Liberty files |
-| `SIMULATOR` | `iverilog`, `vcs`, or `custom` |
-| `IVERILOG_BIN` / `VVP_BIN` | Executables for `SIMULATOR=iverilog` |
-| `VCS_BIN` | Executable for `SIMULATOR=vcs` |
-| `CELL_LIB` | Path to pre-built cell library JSON |
-| `COMPILE_CMD_TEMPLATE` / `RUN_CMD_TEMPLATE` | Commands for `SIMULATOR=custom` |
-| `MAX_VECTORS` | Exhaustive vector safety limit (default 1M) |
-| `SIM_DELAY` | Testbench settle delay (default 1) |
+## 限制
 
-Custom simulator command templates use these placeholders:
-`{sources}`, `{stdcell_sources}`, `{netlist}`, `{tb}`, `{simv}`, `{work_dir}`.
-
-## What The Flow Fills
-
-For each scalar output pin:
-- `function`
-- `power_down_function`
-- `timing_sense` for input-output arcs that affect the output
-
-For the cell:
-- `area`, by summing instantiated stdCell areas from Liberty
-
-Timing and power table values are left as characterization placeholders.
-
-## Limits
-
-- Only combinational MegaCells are supported.
-- Input/output buses are rejected.
-- Exhaustive simulation is capped at 20 input bits by default.
-- The generated `function` uses Liberty Boolean syntax:
-  `!` for NOT, `*` for AND, `+` for OR.
+- 仅组合逻辑 MegaCell
+- 仅标量 I/O（不支持总线端口）
+- 穷举仿真上限 20 输入位
+- 时序和功耗表为占位符
