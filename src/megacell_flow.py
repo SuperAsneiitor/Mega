@@ -21,7 +21,7 @@ from parsers.verilog_parser import (
     ordered_ports, parse_instances, parse_modules,
     scalar_ports, select_module, vector_width,
 )
-from engines.simulator import resolve_stdcell_verilog, run_simulation
+from engines.simulator import run_simulation
 from engines.truth_table import parse_truth_table, write_truth_table_csv, TruthTable
 from engines.logic_minimizer import functions_from_truth_table
 from engines.cell_library import (
@@ -80,8 +80,8 @@ def cmd_build_lib(args: argparse.Namespace) -> None:
 def cmd_sim(args: argparse.Namespace) -> None:
     module, inputs, outputs, cell_names = _parse_top(args.netlist, args.top)
 
-    # 1. 找 stdCell Verilog
-    verilog_files = resolve_stdcell_verilog([], args.stdcell_dir, "*.v", set(cell_names))
+    # 1. 标准单元 Verilog（手工指定）
+    verilog_files = args.stdcell_list
 
     # 2. 仿真
     sim_out = run_simulation(
@@ -165,8 +165,8 @@ def main() -> None:
     # ---- sim ----------------------------------------------------------
     p_sim = sub.add_parser("sim", help="仿真路径: 网表 → iverilog → 真值表 → .lib")
     p_sim.add_argument("netlist", type=Path, help="MegaCell 门级网表 (.v)")
-    p_sim.add_argument("--stdcell-dir", type=Path, required=True,
-                       help="标准单元 Verilog 模型目录")
+    p_sim.add_argument("--stdcell-list", type=Path, nargs="+", required=True,
+                       help="标准单元 Verilog 文件列表")
     p_sim.add_argument("--lib-dir", type=Path, default=None,
                        help="标准单元 Liberty 目录（可选，用于计算面积）")
     p_sim.add_argument("--lib-glob", default="*.lib", help="Liberty 匹配模式")

@@ -17,14 +17,16 @@
 # 前序准备: 构建 stdCell 查找表（仅需一次）
 ./run_build_lib.sh demo/input/asap7sc7p5t/LIB/NLDM_d demo/cell_lib/asap7_rvt_tt.json '*RVT_TT*.lib'
 
-# 路径 A: 仿真
-./run_sim.sh demo/input/megacell_simple.v demo/input/asap7sc7p5t/Verilog MegaCell_simple build/sim_test
+# 路径 A: 仿真（stdCell 文件列表手工指定）
+./run_sim.sh demo/input/megacell_simple.v \
+  "demo/input/asap7sc7p5t/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v demo/input/asap7sc7p5t/Verilog/asap7sc7p5t_INVBUF_RVT_TT_201020.v" \
+  MegaCell_simple build/sim_test
 
 # 路径 B: 推导
 ./run_derive.sh demo/input/megacell_simple.v demo/cell_lib/asap7_rvt_tt.json demo/cell_lib/stdcell_funcs.json MegaCell_simple build/derive_test
 
 # 或直接调 Python:
-python3 src/megacell_flow.py sim <netlist> --stdcell-dir <dir>
+python3 src/megacell_flow.py sim <netlist> --stdcell-list <file1.v> <file2.v>
 python3 src/megacell_flow.py derive <netlist> --cell-lib <json>
 python3 src/megacell_flow.py build-lib <lib_dir> -o <output.json>
 ```

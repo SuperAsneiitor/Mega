@@ -11,10 +11,12 @@
 ```
 
 ```bash
-./run_sim.sh <netlist> <stdcell_verilog_dir> [top] [work_dir]
+./run_sim.sh <netlist> "<stdcell1.v stdcell2.v ...>" [top] [work_dir]
 
 # 示例
-./run_sim.sh demo/input/megacell_simple.v demo/input/asap7sc7p5t/Verilog MegaCell_simple
+./run_sim.sh demo/input/megacell_simple.v \
+  "demo/input/asap7sc7p5t/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v demo/input/asap7sc7p5t/Verilog/asap7sc7p5t_INVBUF_RVT_TT_201020.v" \
+  MegaCell_simple
 ```
 
 ### B. 推导路径（无需仿真器）
